@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  
+  <title>Photojournalist Request Form</title>
+
+</head>
+
+
+<body>
+<h2>get test</h2>
+<h2>help</h2>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <!-- Top navigation -->
+<div class="topnav">
+
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a href="/">Home</a>
+    <a href="/Forms/requestform.html">Request Form</a>
+  </div>
+
+</div>
+
+  <!-- page heading -->
+  <h1>
+    REQUEST A PHOTOJOURNALIST <br>
+    FOR YOUR NEXT EVENT
+  </h1>
+
+  <img class="img-center" alt="cycling banner" SRC="https://eurekaski.com/wp-content/uploads/2019/05/Serre-Che-VTT-mountain-biking-panorama-four-cylists-LONG-1024x293.jpeg">
+  
+
+  <!-- create the button to link to top of page -->
+  <h2>
+    Request Form
+  </h2>
+  <h4>
+    Make sure to fill out the following form completely. <br>
+    Upon submission of your form, please allow upto 48 hours for a response from one of our staff members.
+  </h4>
+
+  <br>
+
+  <!-- start of the creation of form -->
+  <div class="container">
+    <form class="form" action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <!-- create radio button -->
+      <p>Please indicate the need for a Photojournalist:</p>
+      <input type="radio" id="Competitive Sporting Event" name="event" value="Competitive Sporting Event">
+      <label for="Competitive Sporting Event">Competitive Sporting Event</label><br>
+      <input type="radio" id="Individual Athlete Request" name="event" value="Individual Athlete Request">
+      <label for="Individual Athlete Request">Individual Athlete Request</label><br>
+      <input type="radio" id="other" name="event" value="other">
+      <label for="other">Other</label><br>
+
+      <!-- create checkbox button -->
+      <p>How did you hear about our service (select all that apply):</p>
+      <input type="checkbox" id="media1" name="media1" value="Instagram">
+      <label for="media1"> Instagram</label><br>
+      <input type="checkbox" id="media2" name="media2" value="Twitter">
+      <label for="media2"> Twitter</label><br>
+      <input type="checkbox" id="media3" name="media3" value="YouTube">
+      <label for="media3"> YouTube</label><br><br>
+      
+      <!-- create password feature -->
+      <label for="password">Select a password for your account:</label>
+      <input type="password" id="password" name="password" placeholder="Enter a password.."><br><br>
+
+      <!-- create select date feature -->
+      <label for="date">Today's Date:</label>
+      <input type="date" id="date" name="date"><br><br>
+  
+      <!-- create message feature -->
+      <label for="subject">Message About Your Request</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+      <!-- create submit button -->
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+
+  <!-- create the button to link to top of page -->
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Home</title>
+
+  </head>
+
+
+<body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  
+  <!-- Top navigation -->
+<div class="topnav">
+
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a href="/">Home</a>
+    <a href="/Forms/requestform.html">Request Form</a>
+  </div>
+
+</div>
+
+<!-- create headings with photo --> 
+  <h1>
+    PHOTO CYCLING ADVENTURES
+  </h1>
+
+  <img class="img-center" alt="cycling banner" SRC="https://eurekaski.com/wp-content/uploads/2019/05/Serre-Che-VTT-mountain-biking-panorama-four-cylists-LONG-1024x293.jpeg">
+
+  <h2>
+    Exploring the Great Outdoors Since 2000!
+  </h2>
+
+  <h3>
+    Photojournalists on Assignment:
+  </h3>
+  <hr>
+
+  <br>
+
+  <!-- create table with 3 columns and 6 rows --> 
+  <table class="center">
+    <tr>
+      <th>Photojournalist</th>
+      <th>Cycling Event</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alek Fitz</td>
+      <td>Tour of Flanders</td>
+      <td>Belgium</td>
+    </tr>
+    <tr>
+      <td>Jean Marco</td>
+      <td>Tour de France</td>
+      <td>France</td>
+    </tr>
+    <tr>
+      <td>Alexis Ramirez</td>
+      <td>Tour of California</td>
+      <td>United States</td>
+    </tr>
+    <tr>
+      <td>Yosh Alimentari</td>
+      <td>Vuelta a Espa&ntilde;a</td>
+      <td>Spain</td>
+    </tr>
+    <tr>
+      <td>Minako Mara</td>
+      <td>Giro d'Italia</td>
+      <td>Italy</td>
+    </tr>
+    <tr>
+      <td>Dean Cooper</td>
+      <td>Cape Town Cycle Tour</td>
+      <td>South Africa</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <!-- unordered list --> 
+  <h2>New Events Being Added for 2021</h2>
+  
+  <ul class="list-font1">
+    <li>Red Bull City Cycle</li>
+    <li>Houston 100k</li>
+    <li>Columbia Tour</li>
+    <li>Norseman</li>
+    <li>Challenge Roth</li>
+  </ul>  
+
+  <!-- ordered list --> 
+  <h2>Must Haves for Any Photojournalist on Assignment: </h2>
+
+  <ol class="list-font2">
+    <li>Extra Batteries</li>
+    <li>Money for Coffee</li>
+    <li>Rainjacket</li>
+    <li>Shades</li>
+  </ol>
+
+  <!-- create the button to link to top of page --> 
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+</body>
+
+
+
+</html>
